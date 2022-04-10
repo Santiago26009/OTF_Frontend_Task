@@ -7,9 +7,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 First of all, you need to go to `https://github.com/Santiago26009/OTF_Backend_Task` repository and use git clone to download the project. Look at the README file and follow the instructions to run the backend server. Notice that the backend needs to be running first so you can see the users and perform the CRUD actions.
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-You will see the CRUD table with the users already exists in the Hub DB.
+1. Run `npm i` to install node modules folder.
+2. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+3. If you already started the backend, you will see the CRUD table with the existing users in the Hub DB.
 
 ## Code scaffolding
 
