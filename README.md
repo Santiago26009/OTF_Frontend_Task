@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Previous configurations
 
-First all, you need to go to `https://github.com/Santiago26009/OTF_Backend_Task` repository and use git clone to download the project. Look at the README file and follow the instructions to run the backend server.
+First of all, you need to go to `https://github.com/Santiago26009/OTF_Backend_Task` repository and use git clone to download the project. Look at the README file and follow the instructions to run the backend server. Notice that the backend needs to be running first so you can see the users and perform the CRUD actions.
 
 ## Development server
 
