@@ -2,9 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
 
+## Previous configurations
+
+First all, you need to go to `https://github.com/Santiago26009/OTF_Backend_Task` repository and use git clone to download the project. Look at the README file and follow the instructions to run the backend server.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You will see the CRUD table with the users already exists in the Hub DB.
 
 ## Code scaffolding
 
