@@ -1,0 +1,54 @@
+<div>
+  <div class="header">
+    <h1>
+      OTF Backend Test - Nodejs + CRUD
+    </h1>
+  </div>
+
+  <div class="buttons">
+    <mat-form-field>
+      <input matInput placeholder="Insert id to Search">
+    </mat-form-field>
+    <button mat-raised-button (click)="searchUsers($event)">Search User</button>
+    <mat-form-field>
+      <input matInput value="Click me" placeholder="Insert id to Delete" [(ngModel)]='idDelete'>
+    </mat-form-field>
+    <button mat-raised-button (click)="deleteUsers($event)">Delete User
+    </button>
+
+  </div>
+
+  <div>
+    <table mat-table [dataSource]="listFiltered" class="mat-elevation-z8">
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.values.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.values.last_name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef> Document ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.values.document_id}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div class="buttons-row">
+
+      <button mat-raised-button (click)="CreateUser()">Create User</button>
+      <button mat-raised-button (click)="showUpDateForm()" >Update User</button>
+
+
+    </div>
+  </div>
+</div>

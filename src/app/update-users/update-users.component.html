@@ -1,0 +1,18 @@
+<div class="header">
+  <mat-form-field>
+    <input matInput  value="Click me" placeholder="Insert id to Update" [(ngModel)]='update'>
+   </mat-form-field>
+    <form [formGroup]="profileFormUpdate" (ngSubmit)="upDateUsers(profileFormUpdate.value)">
+    
+        <label for="name">First Name: </label>
+        <input id="name" type="text"  id=name formControlName="name">
+      
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" type="text" value="last_name" formControlName="last_name">
+      
+        <label for="document_id">Document Id: </label>
+        <input id="document_id" type="text"  value="document_id" formControlName="document_id">
+      
+        <button type="submit" [disabled]="!profileFormUpdate.valid">Submit</button>
+      </form>
+</div>
